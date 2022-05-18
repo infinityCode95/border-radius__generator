@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <main class="main">
+            <div class="main__container">
+                
+                <div class="generator">
+
+                    <h1 class="generator__title">CSS Generator</h1>
+
+                    <div class="generator__flex">
+
+                        <div class="generator__wrapper wrapper">
+
+                            <!-- ! Top -->
+
+                            <div class="wrapper__top">
+
+                                <div class="wrapper__input-topleft input__style">
+                                    <input id="input__top-left" class="input" type="range" min="0" max="100" value="0">
+
+                                    <div id="result_top-left" class="result">0</div>
+                                </div>
+
+                                <div class="wrapper__input-topright input__style">
+                                    <input id="input__top-right" class="input" type="range" min="0" max="100" value="0">
+
+                                    <div id="result_top-right" class="result">0</div>
+                                </div>
+
+                                
+                            </div>
+
+                            <!-- ! Box -->
+
+                            <div class="wrapper__middle">
+
+                                <div id="box"></div>
+
+                            </div>
+
+                            <!-- ! Total Result -->
+
+                            <div class="generator__result-total ">
+                                <div class="generator__buttons">
+                                    <button class="btn" id="btn">Результат</button>
+                                    <div class="update">
+                                        <i class="update__icon fa-solid fa-arrow-rotate-right fa-lg"></i>
+                                    </div>
+                                </div>
+                                <span>Border-radius:</span> <span class="result__total"></span>
+                            </div>
+
+                            <!-- ! Bottom -->
+
+                            <div class="wrapper__bottom">
+
+                                <div class="wrapper__input-bottomleft input__style">
+                                    <input id="input__bottom-left" class="input" type="range" min="0" max="100" value="0">
+
+                                    <div id="result_bottom-left" class="result">0</div>
+                                </div>
+
+                                <div class="wrapper__input-bottomright input__style">
+                                    <input id="input__bottom-right" class="input" type="range" min="0" max="100" value="0">
+
+                                    <div id="result_bottom-right" class="result">0</div>
+                                </div>                                
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>    
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
